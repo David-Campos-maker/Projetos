@@ -1,9 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-#define TAMANHO_MAXIMO 10 //Define uma constante
-
-//NODO tem: Valor, Próximo*
+#define TAMANHO_MAXIMO 10 
 
 typedef struct nodo {
     int valor;
@@ -66,6 +64,7 @@ void imprimirPilha(PILHA* pilha) {
 }
 
 int main() {
+    //Comandos de Teste
     PILHA minhaPilha;
     inicializarPilha(&minhaPilha);
 
