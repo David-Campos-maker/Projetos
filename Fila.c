@@ -58,6 +58,7 @@ int length(FILA* fila) {
 }
 
 int main() {
+    //Comandos de Teste
     FILA minhaFila;
     iniciarFila(&minhaFila);
     adicionar(&minhaFila , 1);
