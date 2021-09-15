@@ -1,8 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-#define TAMANHO_MAXIMO 10 
-
 typedef struct nodo {
     int valor;
     struct nodo* prox;
@@ -64,15 +62,20 @@ void imprimirPilha(PILHA* pilha) {
 }
 
 int main() {
-    //Comandos de Teste
     PILHA minhaPilha;
     inicializarPilha(&minhaPilha);
-
+    
+    push(&minhaPilha , 1);
     push(&minhaPilha , 2);
+    push(&minhaPilha , 3);
     push(&minhaPilha , 4);
-    push(&minhaPilha , 6);
+
+    imprimirPilha(&minhaPilha);
 
     pop(&minhaPilha);
+
+    printf("\n");
+
     imprimirPilha(&minhaPilha);
 
     return 0;
